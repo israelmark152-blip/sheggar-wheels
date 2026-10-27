@@ -1,0 +1,186 @@
+
+export type Car = {
+  id: string;
+  name: string;
+  category: "SUV" | "Sedan" | "Minivan";
+  description: string;
+  location: string;
+  seats: number;
+  transmission: "Automatic" | "Manual";
+  price: number;
+  badge: string;
+  image: string;
+  year: number;
+  fuel: string;
+  owner: string;
+  details: string;
+  ownerId?: string;
+  listingStatus?: "active" | "inactive";
+};
+
+export const cars: Car[] = [
+  {
+    id: "1",
+    name: "Toyota Land Cruiser",
+    category: "SUV",
+    description: "Premium SUV",
+    location: "Bole",
+    seats: 7,
+    transmission: "Automatic",
+    price: 8500,
+    badge: "POPULAR",
+    image: "https://images.unsplash.com/photo-1572629166063-011a332eafed?auto=format&fit=crop&w=1000&q=85",
+    year: 2023,
+    fuel: "Diesel",
+    owner: "Abebe T.",
+    details: "A spacious SUV for family trips, group travel, and longer journeys.",
+  },
+  {
+    id: "2",
+    name: "Mercedes-Benz C-Class",
+    category: "Sedan",
+    description: "Luxury Sedan",
+    location: "Kazanchis",
+    seats: 5,
+    transmission: "Automatic",
+    price: 6500,
+    badge: "LUXURY",
+    image: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=85",
+    year: 2022,
+    fuel: "Petrol",
+    owner: "Mekdes A.",
+    details: "A comfortable premium sedan suited to business trips and city driving.",
+  },
+  {
+    id: "3",
+    name: "Toyota Corolla",
+    category: "Sedan",
+    description: "Economy Sedan",
+    location: "Bole",
+    seats: 5,
+    transmission: "Automatic",
+    price: 2800,
+    badge: "GREAT VALUE",
+    image: "https://images.unsplash.com/photo-1621773968728-994a68ea47b6?auto=format&fit=crop&w=1000&q=85",
+    year: 2021,
+    fuel: "Petrol",
+    owner: "Dawit K.",
+    details: "An economical everyday car for errands, commuting, and city journeys.",
+  },
+  {
+    id: "4",
+    name: "Toyota RAV4",
+    category: "SUV",
+    description: "Compact SUV",
+    location: "Sar Bet",
+    seats: 5,
+    transmission: "Automatic",
+    price: 5200,
+    badge: "VERSATILE",
+    image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=85",
+    year: 2022,
+    fuel: "Petrol",
+    owner: "Samuel B.",
+    details: "A versatile SUV offering extra space for everyday use and weekend travel.",
+  },
+  {
+    id: "5",
+    name: "Hyundai Tucson",
+    category: "SUV",
+    description: "Modern SUV",
+    location: "CMC",
+    seats: 5,
+    transmission: "Automatic",
+    price: 4800,
+    badge: "COMFORT",
+    image: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=85",
+    year: 2022,
+    fuel: "Petrol",
+    owner: "Hana M.",
+    details: "A comfortable SUV with practical space for passengers and luggage.",
+  },
+  {
+    id: "6",
+    name: "Hyundai Elantra",
+    category: "Sedan",
+    description: "Modern Sedan",
+    location: "Bole",
+    seats: 5,
+    transmission: "Automatic",
+    price: 3200,
+    badge: "CITY PICK",
+    image: "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=1000&q=85",
+    year: 2023,
+    fuel: "Petrol",
+    owner: "Liya G.",
+    details: "A modern sedan for comfortable daily travel around the city.",
+  },
+  {
+    id: "7",
+    name: "Toyota Yaris",
+    category: "Sedan",
+    description: "Compact Economy",
+    location: "Piazza",
+    seats: 5,
+    transmission: "Automatic",
+    price: 2300,
+    badge: "BUDGET",
+    image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1000&q=85",
+    year: 2020,
+    fuel: "Petrol",
+    owner: "Robel S.",
+    details: "A compact, budget-friendly option for short city trips.",
+  },
+  {
+    id: "8",
+    name: "Toyota Hiace",
+    category: "Minivan",
+    description: "Passenger Van",
+    location: "Megenagna",
+    seats: 12,
+    transmission: "Manual",
+    price: 7000,
+    badge: "GROUP TRAVEL",
+    image: "https://images.unsplash.com/photo-1678747172256-b37b7ac99cfc?auto=format&fit=crop&w=1000&q=85",
+    year: 2021,
+    fuel: "Diesel",
+    owner: "Tadesse W.",
+    details: "A passenger van for group journeys and family outings.",
+  },
+  {
+    id: "9",
+    name: "Mitsubishi Pajero",
+    category: "SUV",
+    description: "Adventure SUV",
+    location: "Lebu",
+    seats: 7,
+    transmission: "Automatic",
+    price: 6000,
+    badge: "ADVENTURE",
+    image: "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1000&q=85",
+    year: 2020,
+    fuel: "Diesel",
+    owner: "Biruk D.",
+    details: "A roomy SUV for longer drives and adventurous trips.",
+  },
+  {
+    id: "10",
+    name: "Kia Carnival",
+    category: "Minivan",
+    description: "Family Minivan",
+    location: "Summit",
+    seats: 8,
+    transmission: "Automatic",
+    price: 7500,
+    badge: "FAMILY PICK",
+    image: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=85",
+    year: 2023,
+    fuel: "Diesel",
+    owner: "Selam T.",
+    details: "A spacious family vehicle for passengers and luggage.",
+  },
+];
+
+export function getCarById(id: string) {
+  return cars.find((car) => car.id === id);
+}
